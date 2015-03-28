@@ -87,4 +87,23 @@ void getpoint(double toolLen,double toolD,double cutEdgelen,
 	cv::vconcat(G.mul(1/J),H.mul(1/J),imav);
 	imav = imav.t();
 
+	//去掉负数项
+	Mat delimav;
+	int t = n+1,count =0;
+	for(i=0;i<t;i++)
+		if(imav.at<double>(i,0) < 0 | imav.at<double>(i,1) < 0
+			|imav.at<double>(i,0) >1 | imav.at<double>(i,1) >1)
+		{
+			Mat front = imav(Range(0,i),Range::all());
+			Mat back = imav(Range(i+1,t),Range::all());
+			vconcat(front,back,delimav);
+			
+			imav.release();
+			imav = delimav.clone();
+			
+			i--;
+			t--;
+		}
+	cout << imav << endl;
+
 }

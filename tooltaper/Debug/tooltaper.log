@@ -1,4 +1,4 @@
-﻿Build started 2015/3/28 13:07:37.
+﻿Build started 2015/3/28 16:21:22.
      1>Project "C:\Users\CGGI_07\Desktop\LXD\project\tooltaper\tooltaper\tooltaper.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\tooltaper.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -7,6 +7,9 @@
          tooltaper.cpp
      1>c:\users\cggi_07\desktop\lxd\project\tooltaper\tooltaper\tooltaper.cpp(29): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
      1>c:\users\cggi_07\desktop\lxd\project\tooltaper\tooltaper\tooltaper.cpp(31): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\cggi_07\desktop\lxd\project\tooltaper\tooltaper\tooltaper.cpp(95): warning C4554: '|' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>c:\users\cggi_07\desktop\lxd\project\tooltaper\tooltaper\tooltaper.cpp(95): warning C4554: '|' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>c:\users\cggi_07\desktop\lxd\project\tooltaper\tooltaper\tooltaper.cpp(95): warning C4554: '|' : check operator precedence for possible error; use parentheses to clarify precedence
      1>c:\users\cggi_07\desktop\lxd\project\tooltaper\tooltaper\tooltaper.cpp(19): warning C4101: 'j' : unreferenced local variable
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\CGGI_07\Desktop\LXD\project\tooltaper\Debug\tooltaper.exe" /INCREMENTAL:NO opencv_calib3d231.lib opencv_contrib231.lib opencv_core231.lib opencv_features2d231.lib opencv_flann231.lib opencv_gpu231.lib opencv_highgui231.lib opencv_imgproc231.lib opencv_legacy231.lib opencv_ml231.lib opencv_objdetect231.lib opencv_ts231.lib opencv_video231.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\tooltaper.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\CGGI_07\Desktop\LXD\project\tooltaper\Debug\tooltaper.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\CGGI_07\Desktop\LXD\project\tooltaper\Debug\tooltaper.lib" /MACHINE:X86 Debug\main.obj
@@ -27,4 +30,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.90
+Time Elapsed 00:00:01.73
