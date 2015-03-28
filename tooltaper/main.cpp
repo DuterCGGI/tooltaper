@@ -10,6 +10,9 @@ int main()
 	tool.taperAgl = 0;
 	tool.helixAgl = 45; 
 	tool.precision = 0.1;
- 	getpoint(tool.toolLen,tool.toolD,tool.cutEdgelen,tool.taperAgl,tool.helixAgl,tool.precision);
+	
+    double aa[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
+	cv::Mat image_vector;
+ 	getpoint(tool, *aa, image_vector, "image_vector.txt");
 	return 0;
 }

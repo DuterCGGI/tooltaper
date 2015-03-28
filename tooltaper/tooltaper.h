@@ -2,6 +2,7 @@
 #include <cstring>
 #include <fstream>
 #include <math.h>
+#include <opencv2\opencv.hpp>
 
 using namespace std;
 
@@ -24,14 +25,5 @@ struct Calculate
 	int numofpoint;        // 点的个数
 };
 
-struct Result               // 点的柱坐标
-{
-	double x;               // x
-	double y;               // R 半径
-	double z;               // 旋转角度
-	struct Result* next;
-};
 
-
-void getpoint(double toolLen,double toolD,double cutEdgelen,
-	          double taperAgl,double helixAgl,double precision);
+void getpoint(Data data,double* arrar,cv::Mat imav, const char* filename);
