@@ -11,6 +11,5 @@ int main()
 	tool.helixAgl = 45; 
 	tool.precision = 0.1;
  	getpoint(tool.toolLen,tool.toolD,tool.cutEdgelen,tool.taperAgl,tool.helixAgl,tool.precision);
-
 	return 0;
 }

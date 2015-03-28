@@ -14,7 +14,6 @@ struct Data
 	double taperAgl;      //锥度角度
 	double helixAgl;      //螺旋角
 	double precision;     //精度
-
 };
 
 struct Calculate
@@ -23,10 +22,6 @@ struct Calculate
 	double toolR;          // 铣刀半径
 	double lead;           // 导程
 	int numofpoint;        // 点的个数
-	//double *z;
-	//double *mtoolR;
-	//double *mc;
-
 };
 
 struct Result               // 点的柱坐标
@@ -39,4 +34,4 @@ struct Result               // 点的柱坐标
 
 
 void getpoint(double toolLen,double toolD,double cutEdgelen,
-	double taperAgl,double helixAgl,double precision);
+	          double taperAgl,double helixAgl,double precision);

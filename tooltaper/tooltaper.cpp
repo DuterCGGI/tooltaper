@@ -1,6 +1,5 @@
 #include <vector>
-#include <opencv2\opencv.hpp>
-#include <opencv2\core\mat.hpp>
+#include "common.h"
 #include "tooltaper.h"
 #define Pi 3.1415926
 
@@ -9,7 +8,7 @@ using namespace cv;
 
 
 void getpoint(double toolLen,double toolD,double cutEdgelen,
-	double taperAgl,double helixAgl,double precision)
+	          double taperAgl,double helixAgl,double precision)
 {
 	//toolLen：棒料长度， toolD：钻头直径， cutEdgelen:切削刃长度
 	//taperAgl:锥度角度， helixAgl:螺旋角， precision:精度步长
