@@ -26,4 +26,6 @@ struct Calculate
 };
 
 
-void getpoint(Data data,double* arrar,cv::Mat imav, const char* filename);
+void getpoint(Data data,
+	          const cv::Mat& ProjMat,
+			  std::vector<cv::Point2f>& ImgCoordinate);
