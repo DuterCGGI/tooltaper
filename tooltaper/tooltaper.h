@@ -17,15 +17,6 @@ struct Data
 	double precision;     //精度
 };
 
-struct Calculate
-{
-	
-	double toolR;          // 铣刀半径
-	double lead;           // 导程
-	int numofpoint;        // 点的个数
-};
-
-
 void getpoint(Data data,
 	          const cv::Mat& ProjMat,
 			  std::vector<cv::Point2f>& ImgCoordinate);
