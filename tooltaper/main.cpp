@@ -12,7 +12,10 @@ int main()
 	tool.precision = 0.1;
 	
     double aa[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
-	cv::Mat image_vector;
- 	getpoint(tool, *aa, image_vector, "image_vector.txt");
+	cv::Mat cutline_image_vector;
+ 	getpoint(tool, *aa, cutline_image_vector, "cutline_image_vector.txt");
+
+	cv::Mat contour_image_vector;
+	contourLine(tool, *aa, contour_image_vector, "contourLine_vector.txt");
 	return 0;
 }
